@@ -8,7 +8,7 @@ public class ScannerCadastro {
         int idade;
         float altura;
 
-        System.out.println("Informe o nome da pessoa que deseja cadastrar: ");
+        System.out.println("Informe o nomee da pessoa que deseja cadastrar: ");
         Pessoa = Dados.nextLine();
 
         System.out.println("Informe o Pet da Pessoa caso não tenha digite (Não): ");
