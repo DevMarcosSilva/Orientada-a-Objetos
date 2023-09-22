@@ -12,6 +12,7 @@
     ],
     "java.project.sourcePaths": [
         "Exercícios Avaliativos/Ex 1/ScannerCadastro/src",
-        "Exercícios Avaliativos/Ex 1/JOptionPaneCadastro/src/main/java/defautpackage/joptionpane"
+        "Exercícios Avaliativos/Ex 1/JOptionPaneCadastro/src/main/java/defautpackage/joptionpane",
+        "Exercícios Avaliativos/Heranca/src"
     ]
 }
