@@ -9,7 +9,7 @@ public class App {
         cachorro cachorro1 = new cachorro("vira-lata", 7.0);
         cachorro1.setRaca("pit-bull");
 
-        System.out.println("Dados Peixe:");
+        System.out.println("Dados Peixee:");
         System.out.println("Nome: " +peixe1.getNome() + "\npeso: " +peixe1.getPeso()+ "\nTipo Habitat " +peixe1.getTipoHabitat());
 
         System.out.println("\n");
