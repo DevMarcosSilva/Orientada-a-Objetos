@@ -16,5 +16,6 @@
         "Exercícios Avaliativos/Ex 1/JOptionPaneCadastro/src/main/java/defautpackage/joptionpane",
         "Aulas/Get-Set/src",
         "Aulas/22.09.2023 - Get-Set/src"
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }
