@@ -1,14 +1,16 @@
+package Classes;
+
 public class EdIfantil extends Aluno {
     public EdIfantil(String Nome, String Matricula, int idade) {
         super(Nome, Matricula, idade);
     }
 
-    public void setIdade(int idade) {
+    public void setidade(int idade) {
         if (idade > 4 && idade < 7) {
-            super.setIdade(idade);
+            super.setidade(idade);
         }
         else{
-            System.out.println("Idade inválida");
+            System.out.println("idade inválida");
         }
     }
 
@@ -18,7 +20,7 @@ public class EdIfantil extends Aluno {
         this.Resposavel = Resposavel;
     }
 
-    public String Responsavel() {
+    public String getResponsavel() {
         return Responsavelesponsavel;
     }
 }

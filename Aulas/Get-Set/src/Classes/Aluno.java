@@ -2,39 +2,46 @@ package Classes;
 
 public class Aluno {
 
-    private String Nome;
-    private String Matricula;
+    private String nome;
+    private String matricula;
     private int idade;
 
-    public void setNome(String nome) {
-        this.Nome = nome;
+    public Aluno(String nome, String matricula, int idade){
+        this.nome = nome;
+        this.matricula = matricula;
+        this.idade = idade;
     }
 
-    public void setMatricula(String matricula) {
-        this.Matricula = matricula;
+    public void setnome(String nome) {
+        this.nome = nome;
 
     }
 
-    public void setIdade(int idade) {
+    public void setmatricula(String matricula) {
+        this.matricula = matricula;
+
+    }
+
+    public void setidade(int idade) {
         if (idade > 0) {
 
             this.idade = idade;
         }
         else {
-            System.out.println("Idade inválida");
+            System.out.println("idade inválida");
         }
 
     }
 
-    public String getNome() {
+    public String getnome() {
         return nome;
     }
 
-    public String getMatricula() {
+    public String getmatricula() {
         return matricula;
     }
 
-    public int getIdade() {
+    public int getidade() {
         return idade;
     }
 }

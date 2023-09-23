@@ -11,8 +11,9 @@
         "c:\\Javalibs\\javafx-sdk-20.0.2\\lib\\javafx-swt.jar"
     ],
     "java.project.sourcePaths": [
+        "Exercícios Avaliativos/Heranca/src",
         "Exercícios Avaliativos/Ex 1/ScannerCadastro/src",
         "Exercícios Avaliativos/Ex 1/JOptionPaneCadastro/src/main/java/defautpackage/joptionpane",
-        "Exercícios Avaliativos/Heranca/src"
+        "Aulas/Get-Set/src"
     ]
 }
