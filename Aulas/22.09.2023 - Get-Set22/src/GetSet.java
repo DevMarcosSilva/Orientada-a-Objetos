@@ -3,7 +3,7 @@ import Classes.EdIfantil;
 
 public class GetSet {
     public static void main(String[] args) throws Exception {
-       Aluno aluno1 = new Aluno("cleiton","015164546666",-1);
+       Aluno aluno1 = new Aluno("cleiton","0151",-1);
        aluno1.setidade(20);
        EdIfantil aluno2 = new EdIfantil("maria", "156464564", 20);
        aluno2.setidade(5);
