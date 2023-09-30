@@ -10,7 +10,7 @@ public class EdIfantil extends Aluno {
             super.setidade(idade);
         }
         else{
-            System.out.println("idade inválidaa");
+            System.out.println("idade inválida");
         }
     }
 
