@@ -1,5 +1,4 @@
 package classes;
-
 public class curso {
     private String nome;
     private professor professor; 

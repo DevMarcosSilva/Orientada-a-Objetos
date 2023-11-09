@@ -1,9 +1,6 @@
 package classes;
 import java.util.ArrayList;
 
-
-
-
 public class aluno extends pessoa {
     private curso curso;
     private ArrayList<Double> notas;

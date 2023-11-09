@@ -6,7 +6,7 @@ import classes.professor;
 
 public class main {
     public static void main(String[] args) {
-        
+
         professor professor1 = new professor();
         professor1.setNome("Prof. João");
         professor1.setCpf("12345678901");
