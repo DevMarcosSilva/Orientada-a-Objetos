@@ -16,4 +16,5 @@ public class veiculo {
     public void printDados() {
         System.out.println("Modelo: " + modelo + "\nPreço: " + preco);
     }
+
 }

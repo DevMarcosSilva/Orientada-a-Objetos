@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-import classes.*;
+
+import classes.carro;
+import classes.moto;
+import classes.veiculo;
 
 public class SimulacaoRevenda {
     public static void main(String[] args) {
@@ -27,22 +30,11 @@ public class SimulacaoRevenda {
             }
         }
 
-        System.out.println("Relatório de Veículos:");
-        for (veiculo veiculo : veiculos) {
-            veiculo.printDados();
-            System.out.println("--------");
-        }
+        exibirRelatorio("Relatório de Veículos:", veiculos);
 
-        double totalPrecoAntes = calcularTotalPreco(veiculos);
-        System.out.println("Total de preços antes dos ajustes: " + totalPrecoAntes);
+        
 
-        ajustarPrecos(veiculos);
-
-        System.out.println("Relatório de Veículos Após Ajustes:");
-        for (veiculo veiculo : veiculos) {
-            veiculo.printDados();
-            System.out.println("--------");
-        }
+        exibirRelatorio("Relatório de Veículos Após Ajustes:", veiculos);
 
         double totalPrecoDepois = calcularTotalPreco(veiculos);
         System.out.println("Total de preços após os ajustes: " + totalPrecoDepois);
@@ -80,21 +72,19 @@ public class SimulacaoRevenda {
         veiculos.add(new moto(modelo, preco, ano));
     }
 
+    private static void exibirRelatorio(String titulo, ArrayList<veiculo> veiculos) {
+        System.out.println(titulo);
+        for (veiculo veiculo : veiculos) {
+            veiculo.printDados();
+            System.out.println("--------");
+        }
+    }
+
     private static double calcularTotalPreco(ArrayList<veiculo> veiculos) {
         double total = 0;
         for (veiculo veiculo : veiculos) {
             total += veiculo.getPreco();
         }
         return total;
-    }
-
-    private static void ajustarPrecos(ArrayList<veiculo> veiculos) {
-        for (veiculo veiculo : veiculos) {
-            if (veiculo instanceof moto && ((moto) veiculo).ano >= 2008) {
-                veiculo.preco *= 1.1; // Aumento de 10%
-            } else if (veiculo instanceof carro && ((Carro) veiculo).km > 100000) {
-                veiculo.preco *= 0.92; // Redução de 8%
-            }
-        }
     }
 }
